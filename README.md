@@ -15,7 +15,7 @@ Docker image for TCP port forwarding.
 ### Method1 : docker run
 
 ```
-docker run --rm --restart=always -d -p <BIND_PORT>:8888 -e TARGET_HOST=<TARGET_HOST> -e TARGET_PORT=<TARGET_PORT> seroron/docker-tcp-portforward
+docker run --restart=always -d -p <BIND_PORT>:8888 -e TARGET_HOST=<TARGET_HOST> -e TARGET_PORT=<TARGET_PORT> seroron/docker-tcp-portforward
 ```
 
 ### Method2 : docker-compose

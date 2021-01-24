@@ -1,0 +1,12 @@
+version: "3"
+services:
+  portfowarder:
+    build: .
+    image: seroron/docker-tcp-portforward
+    restart: always
+    ports:
+    - ${BIND_PORT}:8888
+    environment:
+    - TARGET_HOST=${TARGET_HOST}
+    - TARGET_PORT=${TARGET_PORT}
+
